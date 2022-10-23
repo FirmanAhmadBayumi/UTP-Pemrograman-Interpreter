@@ -71,4 +71,10 @@ if passw == 'ATSALSUKI':
                     print('Maaf pilihan menu yang anda masukkan tidak tersedia!')               
             except (ValueError, TypeError):
                 print('Maaf anda hanya harus memberikan input angka 1 atau 2, dan tidak boleh keduanya!!!')  
-                
+      
+                elif choose1 == 2:
+            try:
+                print('\n')
+                garis(65)
+                print('\tBerikut daftar Hp Seken yang dapat anda beli!!!')
+                garis(65)
