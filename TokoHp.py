@@ -85,4 +85,10 @@ if passw == 'ATSALSUKI':
                 choose3 = int(input("\nSilahkan pilih menu yang tersedia (INPUT HARUS BERUPA ANGKA) : "))
                 choose3 != 1 or 2
                     
-                    
+                if choose3 == 1:
+                    print('\nAnda akan membeli Hp Linivi dengan harga RP. 200000')
+                    print('\nTotal uang yang anda miliki saat ini RP.',moneyBuyer)
+                    payment3 = int(input('\nJumlah Hp yang akan dibeli: '))
+                    payment3 = payment3 * linivi
+                    print('\nTotal pembayaran sebesar Rp.',payment3)
+                    min(payment3)
