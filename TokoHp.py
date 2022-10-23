@@ -27,26 +27,4 @@ passw = input('\nSilahkan masukkan nama toko ini untuk melanjutkan transaksi: ')
 if passw == 'ATSALSUKI':
     print('Nama toko yang anda masukkan benar!!!\n')
 
-    try :
-        garis(55)
-        print('\tBerikut daftar menu yang dapat anda pilih')
-        garis(55)
-        
-        for i in range (0, len(listMenu)):
-            
-            if choose1 == 1:
-            try :
-                print('\n')
-                garis(65)
-                print('\tBerikut daftar Hp Baru yang dapat anda beli!!!')
-                garis(65)
-                
-                for i in range(0,len(listHpBaru)):
-                    print(listHpBaru[i])
-                    
-                choose2 = int(input("\nSilahkan pilih menu yang tersedia (INPUT HARUS BERUPA ANGKA) : "))
-                choose2 != 1 or 2
-            print(listMenu[i])
-            
-        choose1 = int(input("\nSilahkan pilih menu yang tersedia (INPUT HARUS BERUPA ANGKA) : "))
-        choose1 != 1 or 2 or 3
+    
