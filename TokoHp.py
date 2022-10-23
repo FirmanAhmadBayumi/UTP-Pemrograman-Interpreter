@@ -27,4 +27,48 @@ passw = input('\nSilahkan masukkan nama toko ini untuk melanjutkan transaksi: ')
 if passw == 'ATSALSUKI':
     print('Nama toko yang anda masukkan benar!!!\n')
 
-    
+    try :
+        garis(55)
+        print('\tBerikut daftar menu yang dapat anda pilih')
+        garis(55)
+        
+        for i in range (0, len(listMenu)):
+            print(listMenu[i])
+            
+        choose1 = int(input("\nSilahkan pilih menu yang tersedia (INPUT HARUS BERUPA ANGKA) : "))
+        choose1 != 1 or 2 or 3
+        
+        if choose1 == 1:
+            try :
+                print('\n')
+                garis(65)
+                print('\tBerikut daftar Hp Baru yang dapat anda beli!!!')
+                garis(65)
+                
+                for i in range(0,len(listHpBaru)):
+                    print(listHpBaru[i])
+                    
+                choose2 = int(input("\nSilahkan pilih menu yang tersedia (INPUT HARUS BERUPA ANGKA) : "))
+                choose2 != 1 or 2
+                
+                if choose2 == 1:
+                    print('\nAnda akan membeli Hp Sumsang dengan harga RP. 500000')
+                    print('\nTotal uang yang anda miliki saat ini RP.',moneyBuyer)
+                    payment1 = int(input('\nJumlah Hp yang akan dibeli: '))
+                    payment1 = payment1 * sumsang
+                    print('\nTotal pembayaran sebesar Rp.',payment1)
+                    min(payment1)
+                       
+                elif choose2 == 2:
+                    print('\nAnda akan membeli Hp Appa dengan harga Rp. 350000')    
+                    print('\nTotal uang yang anda miliki saat ini RP.',moneyBuyer)
+                    payment2 = int(input('Jumlah Hp yang akan dibeli: '))
+                    payment2 = payment2 * appa
+                    print('Total pembayaran sebesar Rp.',payment2)
+                    min(payment2)
+                
+                else:
+                    print('Maaf pilihan menu yang anda masukkan tidak tersedia!')               
+            except (ValueError, TypeError):
+                print('Maaf anda hanya harus memberikan input angka 1 atau 2, dan tidak boleh keduanya!!!')  
+                
