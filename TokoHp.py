@@ -72,7 +72,8 @@ if passw == 'ATSALSUKI':
             except (ValueError, TypeError):
                 print('Maaf anda hanya harus memberikan input angka 1 atau 2, dan tidak boleh keduanya!!!')  
       
-                elif choose1 == 2:
+        elif choose1 == 2:
+                    
             try:
                 print('\n')
                 garis(65)
@@ -147,4 +148,5 @@ else:
     if passw.islower():
         print('Nama toko yang dimasukkan harus huruf besar semua!!!')
     else:
-        print('Nama toko yang anda masukkan salah!!!')                               
+        print('Nama toko yang anda masukkan salah!!!')
+        
