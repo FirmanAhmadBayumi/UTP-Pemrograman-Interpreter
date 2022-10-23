@@ -125,8 +125,7 @@ if passw == 'ATSALSUKI':
                     
                     print('\nTotal pembayaran sebesar Rp.',payment3)
                     min(payment3)
-
-                    
+    
                 elif choose3 == 2:
                     os.system('cls')
                     print('\nAnda akan membeli Hp Seken Pecce dengan harga Rp. 250000')
