@@ -100,4 +100,4 @@ if passw == 'ATSALSUKI':
                     payment4 = int(input('\nJumlah Hp yang akan dibeli: '))
                     payment4 = payment4 * pecce
                     print('\nTotal pembayaran sebesar Rp.',payment4)
-                    min(payment4
+                    min(payment4)
