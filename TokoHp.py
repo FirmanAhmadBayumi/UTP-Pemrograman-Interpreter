@@ -78,3 +78,10 @@ if passw == 'ATSALSUKI':
                 garis(65)
                 print('\tBerikut daftar Hp Seken yang dapat anda beli!!!')
                 garis(65)
+
+                for i in range(0,len(listHpSeken)):
+                    print(listHpSeken[i])
+                    
+
+                    
+                    
