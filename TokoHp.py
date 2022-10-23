@@ -92,3 +92,12 @@ if passw == 'ATSALSUKI':
                     payment3 = payment3 * linivi
                     print('\nTotal pembayaran sebesar Rp.',payment3)
                     min(payment3)
+
+                    
+                elif choose3 == 2:
+                    print('\nAnda akan membeli Hp Seken Pecce dengan harga Rp. 250000')
+                    print('\nTotal uang yang anda miliki saat ini RP.',moneyBuyer)
+                    payment4 = int(input('\nJumlah Hp yang akan dibeli: '))
+                    payment4 = payment4 * pecce
+                    print('\nTotal pembayaran sebesar Rp.',payment4)
+                    min(payment4
