@@ -82,6 +82,7 @@ if passw == 'ATSALSUKI':
                 for i in range(0,len(listHpSeken)):
                     print(listHpSeken[i])
                     
-
+                choose3 = int(input("\nSilahkan pilih menu yang tersedia (INPUT HARUS BERUPA ANGKA) : "))
+                choose3 != 1 or 2
                     
                     
