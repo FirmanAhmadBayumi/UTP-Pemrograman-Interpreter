@@ -71,6 +71,7 @@ if passw == 'ATSALSUKI':
                         print('\nMaaf uang yang anda miliki saat ini tidak cukup!!!')
                         print('\nSilahkan mengulang program dari awal!!!')
                         exit()
+                    
                         
                     print('\nTotal pembayaran sebesar Rp.',payment1)
                     min(payment1)
@@ -87,13 +88,14 @@ if passw == 'ATSALSUKI':
                         print('\nSilahkan mengulang program dari awal!!!')
                         exit()
                     
+                    
                     print('Total pembayaran sebesar Rp.',payment2)
                     min(payment2)
                 
                 else:
-                    print('Maaf pilihan menu yang anda masukkan tidak tersedia!')               
-            except (ValueError, TypeError):
-                print('Maaf anda hanya harus memberikan input angka 1 atau 2, dan tidak boleh keduanya!!!')  
+                    print('\nMaaf pilihan menu yang anda masukkan tidak tersedia!')               
+            except (ValueError,TypeError):
+                print('\nMaaf anda hanya harus memberikan input angka 1 atau 2, dan tidak boleh keduanya!!!')  
       
         elif choose1 == 2:
                     
@@ -131,12 +133,18 @@ if passw == 'ATSALSUKI':
                     print('\nTotal uang yang anda miliki saat ini RP.',moneyBuyer)
                     payment4 = int(input('\nJumlah Hp yang akan dibeli: '))
                     payment4 = payment4 * pecce
+                    
+                    if payment4 > 2000000:
+                        print('\nMaaf uang yang anda miliki saat ini tidak cukup!!!')
+                        print('\nSilahkan mengulang program dari awal!!!')
+                        exit()
+                    
                     print('\nTotal pembayaran sebesar Rp.',payment4)
                     min(payment4)
                 else:
-                    print('Maaf pilihan menu yang anda masukkan tidak tersedia!')               
-            except (ValueError, TypeError):
-                print('Maaf anda hanya harus memberikan input angka 1 atau 2, dan tidak boleh keduanya!!!')
+                    print('\nMaaf pilihan menu yang anda masukkan tidak tersedia!')               
+            except (ValueError,TypeError):
+                print('\nMaaf anda hanya harus memberikan input angka 1 atau 2, dan tidak boleh keduanya!!!')
         
         elif choose1 == 3:
             try:
@@ -177,18 +185,18 @@ if passw == 'ATSALSUKI':
                         print('\nMaaf uang yang anda miliki saat ini tidak cukup!!!')
                         print('\nSilahkan mengulang program dari awal!!!')
                         exit()
-                    
+
                     print('\nTotal pembayaran Rp.',payment6)
                     min(payment6)
                 
                 else:
-                    print('Maaf pilihan menu yang anda masukkan tidak tersedia!')   
-            except (ValueError, TypeError):
-                print('Maaf anda hanya harus memberikan input angka 1 atau 2, dan tidak boleh keduanya!!!')   
+                    print('\nMaaf pilihan menu yang anda masukkan tidak tersedia!')   
+            except (ValueError,TypeError):
+                print('\nMaaf anda hanya harus memberikan input angka 1 atau 2, dan tidak boleh keduanya!!!')   
         else:
-            print('Maaf pilihan menu yang anda masukkan tidak tersedia!')
-    except (ValueError, TypeError):
-                print('Maaf anda hanya harus memberikan input angka 1 atau 2 atau 3!!!')            
+            print('\nMaaf pilihan menu yang anda masukkan tidak tersedia!')
+    except (ValueError,TypeError):
+                print('\nMaaf anda hanya harus memberikan input angka 1 atau 2 atau 3!!!')            
 else:
     if passw.islower():
         print('Nama toko yang dimasukkan harus huruf besar semua!!!')
