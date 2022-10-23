@@ -5,6 +5,7 @@ def garis(jum):
     
 def min(payment):
     total = print('\nSisa uang anda saat ini Rp.', moneyBuyer - payment)
+    print('\n')
     garis(60)
     print('Terima kasih sudah melakukan transaksi di toko Atsalsuki!!!')
     garis(60)
