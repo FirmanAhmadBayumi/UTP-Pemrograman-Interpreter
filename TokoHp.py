@@ -101,3 +101,50 @@ if passw == 'ATSALSUKI':
                     payment4 = payment4 * pecce
                     print('\nTotal pembayaran sebesar Rp.',payment4)
                     min(payment4)
+                else:
+                    print('Maaf pilihan menu yang anda masukkan tidak tersedia!')               
+            except (ValueError, TypeError):
+                print('Maaf anda hanya harus memberikan input angka 1 atau 2, dan tidak boleh keduanya!!!')
+        
+        elif choose1 == 3:
+            try:
+                print('\n')
+                garis(65)
+                print('\tBerikut daftar merk Hp yang dapat anda service!!!')
+                garis(65)
+                
+                for i in range(0,len(listServiceHp)):
+                    print(listServiceHp[i])
+                    
+                choose4 = int(input("\nSilahkan pilih menu yang tersedia (INPUT HARUS BERUPA ANGKA) : "))
+                choose4 != 1 or 2
+                
+                if choose4 == 1:
+                    print('\nAnda akan menservice Hp Linivi dengan harga Rp. 100000')
+                    print('\nTotal uang yang anda miliki saat ini RP.',moneyBuyer)
+                    payment5 = int(input('\nJumlah Hp yang akan di service '))
+                    payment5 = payment5 * servLinivi
+                    print('\nTotal pembayaran Rp.',payment5)
+                    min(payment5)
+                    
+                elif choose4 == 2:
+                    print('\nAnda akan menservice Hp Pecce dengan harga Rp. 150000')
+                    print('\nTotal uang yang anda miliki saat ini RP.',moneyBuyer)
+                    payment6 = int(input('\nJumlah Hp yang akan di service '))
+                    payment6 = payment6 * servPecce
+                    print('\nTotal pembayaran Rp.',payment6)
+                    min(payment6)
+                
+                else:
+                    print('Maaf pilihan menu yang anda masukkan tidak tersedia!')   
+            except (ValueError, TypeError):
+                print('Maaf anda hanya harus memberikan input angka 1 atau 2, dan tidak boleh keduanya!!!')   
+        else:
+            print('Maaf pilihan menu yang anda masukkan tidak tersedia!')
+    except (ValueError, TypeError):
+                print('Maaf anda hanya harus memberikan input angka 1 atau 2 atau 3!!!')            
+else:
+    if passw.islower():
+        print('Nama toko yang dimasukkan harus huruf besar semua!!!')
+    else:
+        print('Nama toko yang anda masukkan salah!!!')                               
